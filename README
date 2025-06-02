@@ -1,12 +1,24 @@
-# Funções de -mail nativas do Python
-#
-# Instalar Env no ambiente virtual venv
-#
-# python3 -m venv venv
-# source venv/bin/activate
-# pip install python-dotenv
-#
-# Instalar python-dateutil é uma biblioteca que estende o módulo datetime do Python, permitindo manipulação avançada de datas e horários, como somar meses, lidar com fusos horários e analisar strings de datas.
-# pip3 install python-dateutil
-# Instalar biblioteca requests no ambiente virtual
-# pip install requests
+📧 Automatização de leitura de e-mails com anexos PDF
+Este projeto, desenvolvido em Python, realiza a conexão automática com uma conta de e-mail (via protocolo IMAP) e busca por mensagens não lidas que contenham anexos em formato PDF. Os anexos encontrados são salvos em um diretório local para posterior processamento.
+
+⚙️ Tecnologias e Bibliotecas Utilizadas
+imaplib, email: Bibliotecas nativas para conexão com servidores de e-mail e leitura de mensagens.
+
+smtplib: Para envio automatizado de e-mails (opcional).
+
+python-dotenv: Carregamento de variáveis de ambiente sensíveis como e-mail e senha.
+
+python-dateutil: Manipulação avançada de datas e horários.
+
+requests: Realização de requisições HTTP, caso necessário em integrações externas.
+
+shutil, os, glob: Gerenciamento de arquivos e diretórios locais.
+
+▶️ Como executar
+Crie e ative um ambiente virtual:
+Abaixo estão as dependências 
+Execute os comandos seguindo a ordenação abaixo:
+1 - python3 -m venv venv
+2 - source venv/bin/activate
+3 - Instale as dependências:
+4 - pip install python-dotenv python-dateutil requests
