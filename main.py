@@ -1,3 +1,5 @@
+from dotenv import load_dotenv                      # Biblioteca para carregar variáveis de ambiente do arquivo .env
+load_dotenv()                                       # Carregando arquivo .env da raiz do projeto
 
 import imaplib                                      # Biblioteca para fazer conexão com o servidor de email
 import email                                        # Biblioteca para fazer a leitura do email
@@ -24,6 +26,14 @@ from Classes.FuncoesBasicas import FuncoesBasicas   # Classe responsável pela m
 from Classes.EmailClass import EmailClass           # Classe responsável pela manipulação de emails
 from Classes.ApiDados import ApiDados               # Classe responsável pelo envio de dados
 
+
+######################################################################
+# Teste leitura das variáveis de ambiente do arquivo .env
+print('Verificação do arquivo .env')
+if(os.getenv('EMAIL') == ''):
+    print('Email vazio, programa encerrado até que seja preenchido no .env')
+    #print(os.getenv('EMAIL'))
+    exit()
 ###################################################################### CONSTANTES
 DIRETORIO_PDF = os.path.dirname(__file__) + '/arquivos/'
 

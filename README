@@ -1,1 +1,12 @@
 # Funções de -mail nativas do Python
+#
+# Instalar Env no ambiente virtual venv
+#
+# python3 -m venv venv
+# source venv/bin/activate
+# pip install python-dotenv
+#
+# Instalar python-dateutil é uma biblioteca que estende o módulo datetime do Python, permitindo manipulação avançada de datas e horários, como somar meses, lidar com fusos horários e analisar strings de datas.
+# pip3 install python-dateutil
+# Instalar biblioteca requests no ambiente virtual
+# pip install requests
