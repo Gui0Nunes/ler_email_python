@@ -35,7 +35,7 @@ class EmailClass:
         #         msg = MIMEMultipart()
         #         msg['Subject'] = 'Bot Leitura'
         #         msg['From'] = self._email
-        #         msg['To'] = 'joaogabriel.silva@jmduque.com.br'
+        #         msg['To'] = 'contato@guilhermenunes.com.br'
         #         msg.attach(MIMEText(f'Fatura baixada {datetime.now()}'))
 
         #         try:
