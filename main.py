@@ -38,10 +38,10 @@ if(os.getenv('EMAIL') == ''):
 DIRETORIO_PDF = os.path.dirname(__file__) + '/arquivos/'
 
 # Configuração do servidor de email
-EMAIL = 'teste@jmduque.com.br'
-SENHA = 'JoaoGabriel@36'
-SERVER = 'mail.jmduque.com.br'
-PORTA = [993, 465]
+EMAIL = os.getenv('EMAIL')
+SENHA = os.getenv('SENHA')
+SERVER = os.getenv('SERVER')
+PORTA = [int(os.getenv('PORTA_IMAP')), int(os.getenv('PORTA_SMTP'))]
 ###################################################################### CONSTANTES
 
 ###################################################################### INÍCIO DO CÓDIGO
